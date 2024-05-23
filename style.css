@@ -1,0 +1,130 @@
+* {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b8d7fe;
+}
+
+header,footer {
+    background-color: #d3e3fc;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* border: 1px solid black; */
+}
+
+header .container{
+    width: 35%;
+    margin: auto;
+}
+
+section .h1 {
+    width: 35%;
+    margin: auto;
+}
+
+header h1 {
+    text-align: center;
+    background-color: #fd6d6d;
+    color: black;
+    border-radius: 5px;
+    font-family: "Tajawal", sans-serif;
+    /* max-width: 100%; */
+}
+
+section .h1 {
+    text-align: center;
+    background-color: #ff6d6d;
+    color: white;
+    border-radius: 5px;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    /* max-width: 100%; */
+    margin-bottom: 30px;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.first_p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    position: relative;
+}
+
+ .first_p:after {
+    content: "";
+    display: block; 
+    width: 50%;  
+    height: 1px;
+    background-image: repeating-linear-gradient(to right, transparent 0%, #f51b1b 5px, transparent 10px);
+    vertical-align: middle; 
+    margin: 20px auto; 
+  }
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+
+}
+
+.team-member {
+    margin: 10px;
+    text-align: center;
+    width: 20%;
+    background-color: #f1eee5;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.team-member img {
+    width: 40%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .team-member {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        width: 100%;
+    }
+    header .container{
+        height: auto;  
+        width: 400px;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+    .container .h1 {
+        height: 30px;  
+        width: 300px;
+        font-size: 1.2rem;
+    }
+}
+
